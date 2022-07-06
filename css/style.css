@@ -1,0 +1,94 @@
+
+body {
+    font-family: 'Varela Round' , sans-serif; 
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+:root{
+    --maincolor:#6195ff;
+    --whitecolor:#fff;
+    --hovercolor:#6380fe;
+    --overlaycolor:rgba(0,0,0,0.6);
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+
+}
+
+.section-padding{
+    padding: 40px 0;
+}
+
+.overlay{
+    height: 100%;
+    width: 100vw;
+    background-color: var(--overlaycolor);
+    position: absolute;
+    top: 0;
+    left: 0;
+   /* display: flex;*/
+}
+/*________________________________________________________*/
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat' , sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.list-unstyle{
+    list-style: none;
+}
+
+
+/*For Buttons*/
+
+button{
+    font-family:inherit;
+}
+
+.hover-opacity{
+    transition: opacity 0.5s;
+}
+
+.hover-opacity:hover{
+    opacity: 0.8;
+}
+
+/*End  Buttons*/
+
+
+/* Start Section header*/
+
+.section-header{
+    text-align: center;
+    margin: 25px 0;
+}
+
+.section-title{
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.section-header .line{
+    width: 70px;
+    display: block;
+    margin: 0 auto 70px auto;
+    height: 2px;
+    background-color: #6195ff;
+}
+
+/* End Section header*/
+
+

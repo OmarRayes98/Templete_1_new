@@ -1,0 +1,49 @@
+.people-itmes{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-auto-rows: auto;
+    gap: 30px 25px;
+}
+
+.person-itme{
+   text-align: center;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   margin-bottom: auto;
+}
+
+.person-img{
+   width: 100%;
+   margin-bottom: 20px;
+   height: 230px;
+}
+
+.person-name{
+   text-transform: capitalize;
+   color: rgb(46, 42, 42);
+   margin-bottom: 20px;
+   transition: color 0.5s ;
+
+}
+.person-job{
+   color: grey;
+   font-size: 18px;
+   text-transform: capitalize;
+   margin-bottom: 30px;
+}
+.person-link{
+   font-size: 0.9em;
+   text-align: right;
+   margin: 0 5px 5px 0;
+   display: block;
+
+}
+.person-link a{
+   color: var(--maincolor);
+   transition: color 0.5s ;
+   text-transform: capitalize;
+
+}
+.person-link a:hover ,.person-name:hover{
+   color: rgb(117, 116, 116);
+}

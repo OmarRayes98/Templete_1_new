@@ -1,0 +1,130 @@
+/*Nav*/
+
+.navbar{   
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: var(--overlaycolor);
+    padding: 6px;
+
+}
+.navbar .nav-content{
+    display: flex;    
+    justify-content: space-between;
+
+}
+.navbar .logo {
+    margin-top: 2px;
+}
+
+.navbar .logo img{
+    width: 110px;
+
+}
+
+.navbar .nav-links{  
+    display: flex;
+    align-items: center;
+    list-style: none;
+      
+    }
+.navbar .nav-links li {
+     margin: 0 25px;
+    }
+
+
+.navbar .nav-links > li > a {
+        
+        font-size: 15px;
+        color: var(--whitecolor);
+        display: block;
+    }
+    
+.navbar .nav-links > li > a:after ,
+.navbar .nav-links > li > a.active:after
+    {
+        content: "";
+        display: block;
+        margin-top: 2px;
+        height: 1.5px;
+        background-color: var(--maincolor);
+        transition: width 0.5s;
+    }
+.navbar .nav-links > li > a:after {
+        width: 0;
+    }
+.navbar .nav-links > li > a.active:after
+    {
+        width: 100%;
+    }
+    
+.navbar .nav-links > li > a:hover:after{
+        width: 100%;
+    }
+
+.menu-btn{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    
+.ctn{
+        background-color: var(--maincolor);
+        padding: 8px 15px;
+        border-radius: 30px;
+    }
+
+    /*_______________________________________________*/
+    @media screen and (max-width:850px) {
+
+        .navbar{   
+            padding: 0px; 
+            background-color: transparent;
+        }
+        .navbar .logo {
+             position: absolute;
+            /* top: 30px;
+             left: 30px; */
+             visibility: hidden;
+            }
+            
+            .navbar .nav-links{  
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 350px;
+                justify-content: center;
+                background-color: rgb(77, 70, 70);
+                margin-top: -350px;
+                transition: all 0.4s ease;
+                  
+                }
+
+
+                .mobile-menu{
+                     margin-top: 0 !important;
+                     border-bottom-right-radius: 30%;
+                }
+
+                .menu-btn{
+                    display: block;
+                }
+                .navbar .nav-links  li  {
+                     margin: 30px auto;
+                   }
+
+                   .navbar .nav-links > li > a.active:after
+                   {
+                       width: 0;
+                   }
+                   
+                   .navbar .nav-links > li > a:hover:after{
+                       width: 0;
+                   }
+                   .navbar .container{
+                    width: 100%;
+                   }
+                }

@@ -1,0 +1,134 @@
+
+/*General Css Style */
+
+body {
+    background: #f4f4f2;
+}
+
+*{
+    box-sizing: border-box; 
+ }
+.container{
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+   /* border: 1px solid #1c1d21;*/
+}
+
+.myprofile{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-column-gap: 10px;
+
+}
+
+header{
+   font-size: 40px;
+   text-align: center;
+   background-color: #1c1d21;
+   color: white;
+}
+
+.body{
+   
+    font-size: 18px;
+    border: 1px #cccccc solid;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+
+}
+
+.profile h3 {
+    background-color: #1c1d21;
+    text-align: center;
+    color: white;
+    width: 99.5%;
+
+}
+.profile figure {
+    margin: auto;
+    padding: 10px;
+    
+  }
+.profile figure figcaption {
+    color: black;
+    padding: 2px;
+    text-align: center;
+  }
+
+.profile img{
+    display: block;
+    width: 180px;
+    height: 200px;
+    margin: auto;
+    
+}
+
+.info{
+    text-transform: capitalize;
+}
+
+.info li {
+    font-size: 17px;  
+    line-height: 1.3em; 
+}
+.bio{
+    /*    border-left: 1.5px solid black;
+*/
+    padding: 10px;
+}
+
+p{
+    text-indent: 30px;
+
+}
+
+footer{
+    background-color: #1c1d21;
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
+
+.unstyle{
+    list-style-type: none;
+    padding: 5px;
+}
+.bio h1 {
+    color: #1c1d21;
+    text-align:center;
+}
+
+.keep-letter{
+    text-transform:none;
+
+}
+.vertical-line{
+    border-left: 1px solid black;
+    height: 50%;
+    margin:auto;
+
+}
+
+button{
+    margin: 5px;
+    border: 2px solid gray;
+    width: 60%;
+    height: 30px;
+    cursor: pointer;
+    
+}
+
+
+@media screen and (max-width:1000px){
+
+    .myprofile{
+        display: flex;
+       flex-direction: column;
+    
+    }
+
+ }
+
+
